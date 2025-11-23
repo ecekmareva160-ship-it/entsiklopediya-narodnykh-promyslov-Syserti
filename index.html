@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/app.js" defer></script>
+    <script src="libs/rain.js" defer></script>
+    <script src="js/carousel.js" defer></script>
+</head>
+<body>
+    <section class="as">
+        <div class="as__container">
+        <div class="as__item as-1" style="background-image: url(img/as1.jpg);"></div>
+        <div class="as__item as-2" style="background-image: url(img/as2.png);"></div>
+        <div class="as__item as-3" style="background-image: url(img/as3.png);"></div>
+        <div class="as__item as-4" style="background-image: url(img/as4.png);"></div>
+        <div class="as__item as-5" style="background-image: url(img/as5.png);"></div>
+        <div class="as__item as-6">
+            <div class="hero-content">
+                <h1>ЭНЦИКЛОПЕДИЯ НАРОДНЫХ <span>ПРОМЫСЛОВ СЫСЕРТИ</span></h1>
+                <div class="hero-content__z">Промыслы являются одной из форм народного искусства.
+                    <br> Они несут в себе исторический, духовный, эстетический опыт народа,
+                    <br> его духовно-нравственную основу. Изучение народных промыслов – 
+                    <br>средство развития личности человека, а  изделия народных 
+                    <br>умельцев - своеобразная визитная каточка любого города.</span></div>
+                <button class="button-start">Начать чтение</button>
+            </div>
+        </div>
+        <div class="as__item as-7" style="background-image: url(img/as6.png);"></div>
+        <div class="as__item as-8">
+            <canvas class="rain"></canvas>
+        </div>
+    </div>
+    </section>
+
+<div class="empty-block"></div>
+<style>
+.empty-block {
+  min-width: 100px;   /* минимальная ширина */
+  min-height: 50px;  /* минимальная высота */
+  background-color: rgb(0, 0, 0); /* цвет фона для наглядности */
+}
+</style>
+
+
+<div class="scroll-target">
+    <!-- Карусель народных промыслов -->
+<div class="crafts-carousel-container">
+  <button class="top-left-arrow" id="goToFirstBlock">&lt;</button>
+  <div class="left-fade"></div>
+  <div class="bg-image"></div>
+  <div class="bg-image"></div>
+  <div class="bg-image"></div>
+  <div class="side-info">
+      <div class="const-title">Содержание</div>
+      <div class="change-title">Введение</div>
+      <p class="info-text">Выберите один из промыслов ниже, чтобы узнать подробности.</p>
+      <button class="side-btn" style="display:none">Введение</button>
+    </div>
+  <div class="carousel-block">
+    <div class="carousel"></div>
+    <div class="arrow-controls">
+      <button class="arrow-btn" id="arrowLeft">&lt;</button>
+      <button class="arrow-btn" id="arrowRight">&gt;</button>
+    </div>
+  </div>
+</div>
+</body>
