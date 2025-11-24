@@ -223,6 +223,8 @@ body {
   align-items: flex-end;
   z-index: 11;
   user-select: none;
+  transform: scale(0.75); /* уменьшает карусель до 70% от оригинала */
+  transform-origin: right center;
 }
 .crafts-carousel-container .carousel {
   position: relative;
